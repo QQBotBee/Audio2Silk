@@ -1,0 +1,46 @@
+# CMake and local build directories
+/build/
+/build-*/
+/cmake-build*/
+/CMakeFiles/
+/CMakeCache.txt
+/CTestTestfile.cmake
+/cmake_install.cmake
+
+# Compiler and debugger outputs
+*.obj
+*.o
+*.lib
+*.a
+*.dll
+*.pdb
+*.ilk
+
+# Local test executables
+/test-*.exe
+/verify-*.exe
+/build-test-*.exe
+/build-tests/
+
+# Generated audio fixtures and conversion outputs
+/input.wav
+/input.mp3
+/input.flac
+/input.ogg
+/output.silk
+/mp3.silk
+/flac.silk
+/test-output.silk
+/*.tmp.*
+
+# Editor and OS metadata
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+Thumbs.db
+Desktop.ini
+
+# Internal agent planning notes
+/docs/superpowers/
