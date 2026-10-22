@@ -1,7 +1,7 @@
 # Audio2Silk
 
 [![Language](https://img.shields.io/badge/language-C11-00599C.svg)](https://en.cppreference.com/w/c/11)
-[![Platform](https://img.shields.io/badge/platform-Windows%2010%2B-0078D4.svg)](#系统要求)
+[![Platform](https://img.shields.io/badge/platform-Windows%207%2B-0078D4.svg)](#系统要求)
 [![FFmpeg](https://img.shields.io/badge/FFmpeg-not%20required-success.svg)](#项目特点)
 
 一个面向 Windows 的轻量级命令行工具，用于将常见音频文件转换为微信、QQ 语音使用的腾讯 SILK V3 格式，也可以将 SILK 文件解码为 WAV。
@@ -75,11 +75,12 @@ audio2silk.exe -d <输入.silk路径> <输出.wav路径>
 | AAC / M4A | 暂不保证 | 建议先转换为 WAV、MP3、FLAC 或 Ogg/Vorbis |
 | SILK 编码 | 支持 | 输出微信、QQ 常用的 SILK V3 格式 |
 | SILK 解码 | 支持 | 输出 24 kHz 单声道 PCM WAV |
+| Windows 7 | 已有实测可运行记录 | 不同系统环境仍可能存在差异 |
 | Linux / macOS | 未提供发行版 | 当前发布脚本和宽字符入口面向 Windows |
 
 ## 系统要求
 
-- Windows 10 或更高版本，x64。
+- Windows 7 SP1 或更高版本，x64；Windows 7 已有实测可运行记录，但未覆盖所有系统配置。
 - 直接运行发行版只需要系统自带的 UCRT，不需要安装 FFmpeg 或其他 DLL。
 - 从源码构建需要 Zig 0.17（推荐）或 CMake 3.20+ 与支持 C11 的 Windows 编译器。
 
